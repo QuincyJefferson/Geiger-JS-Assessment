@@ -10,9 +10,11 @@ $(document).ready(function() {
     });
     // Checks if favorite color input is filled with content
     $("input[name='question2']:first").on("input", function() {
+        var re = /^ *$/;
         let input=$(this);
+        var isBlank = re.test(input.val());
         let is_name=input.val();
-        if(is_name){input.removeClass("invalid").addClass("valid");}
+        if(is_name && !isBlank){input.removeClass("invalid").addClass("valid");}
         else {input.removeClass("valid").addClass("invalid");}
     });
     // Verify the first two questions have content
