@@ -5,3 +5,16 @@ input.invalid {
 input.valid {
     border: 2px solid green;
 }
+
+.error {
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    border: 1px solid #999;
+    top: 46%;
+    left: 40%;
+    z-index: 2;
+    padding: 20px;
+}

@@ -24,7 +24,7 @@ $(document).ready(function() {
             return;
         } else { 
             event.preventDefault();
-            $("#content").append("<div class='error'><h3>Error</h3><p>Please fill out questions 1 and 2 before trying to submit.</p><button class='okayBtn'>Okay</button></div>")
+            $("#content").append("<div class='error'><h2>Error</h2><p>Please fill out questions 1 and 2 before trying to submit again.</p><button class='okayBtn'>Okay</button></div>")
             $(".okayBtn").click(function() {
                 $(".error").hide();
             })
